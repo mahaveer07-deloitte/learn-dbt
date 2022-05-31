@@ -1,0 +1,36 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: REPUTATION
+    description: "Top 10 users with the highest reputation"
+
+  - name: QUESTIONS
+    description: "Text of questions asked by user whose display name is alexandrul"
+
+  - name: QUESTIONS_LIKE
+    description: "Questions asked by user whose display name contains the string “nau”"
+
+  - name: QUESTIONCOUNT
+    description: "Users who have a reputation greater than 75000"
+
+  - name: MOST_POPULAR_BADGES
+    description: "The 10 most popular badges"
